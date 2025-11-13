@@ -20,20 +20,6 @@
   .bar-wrapper{cursor:default!important}
   .gantt .grid-row, .gantt .bar-wrapper{height:var(--row-h)!important}
   .gantt .bar{rx:4; ry:4}
-
-  /* 🔹 Estilo del chat inferior izquierdo */
-  #chat-frame {
-    position: fixed;
-    bottom: 15px;
-    left: 15px;
-    width: 360px;
-    height: 480px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: 9999;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
 </style>
 </head>
 <body>
@@ -70,13 +56,6 @@
     <div id="gantt"></div>
   </div>
 </div>
-
-<!-- 🔹 Chat inferior izquierdo -->
-<iframe 
-  id="chat-frame"
-  src="https://horjuela12.app.n8n.cloud/webhook/12a561d2-fad4-41b4-965e-dce4643d5991/chat"
-  title="Chat"
-></iframe>
 
 <script src="https://cdn.jsdelivr.net/npm/frappe-gantt@0.6.1/dist/frappe-gantt.min.js"></script>
 <script>
